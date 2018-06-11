@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="573.0" prefWidth="897.0" style="-fx-background-color: LIGHTSEAGREEN;"
+            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ConApp">
+    <Label layoutX="19.0" layoutY="79.0" text="sudo apt-get install unrar"/>
+    <Button layoutX="349.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnUnrarA" prefHeight="26.0"
+            prefWidth="98.0" text="Unrar"/>
+    <Label layoutX="19.0" layoutY="128.0" text="sudo apt-get install ubuntu-cleaner"/>
+    <Button layoutX="349.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnUCleanerA" prefHeight="26.0"
+            prefWidth="98.0" text="UCleaner"/>
+    <Label layoutX="19.0" layoutY="183.0" text="sudo add-apt-repository ppa:graphics-drivers/ppa"/>
+    <Button layoutX="349.0" layoutY="178.0" mnemonicParsing="false" onAction="#btnNVidiaA" prefHeight="26.0"
+            prefWidth="98.0" text="NVidia Drv"/>
+    <Label layoutX="19.0" layoutY="236.0" text="sudo apt-get install converseen"/>
+    <Button layoutX="349.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnConverseenA" prefHeight="26.0"
+            prefWidth="98.0" text="Converseen"/>
+    <Label layoutX="19.0" layoutY="287.0" text="sudo apt-get install oracle-java9-installer"/>
+    <Label layoutX="19.0" layoutY="337.0" text="sudo apt-get install oracle-java8-installer"/>
+    <Label layoutX="19.0" layoutY="386.0" text="sudo apt-get install winff"/>
+    <Label layoutX="19.0" layoutY="440.0" text="sudo apt install mpv"/>
+    <Button layoutX="349.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnJava9A" prefHeight="26.0"
+            prefWidth="98.0" text="Java 9"/>
+    <Button layoutX="349.0" layoutY="333.0" mnemonicParsing="false" onAction="#ntnJava8A" prefHeight="26.0"
+            prefWidth="98.0" text="Java 8"/>
+    <Button layoutX="349.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnWinFFA" prefHeight="26.0"
+            prefWidth="98.0" text="WinFF"/>
+    <Button layoutX="349.0" layoutY="435.0" mnemonicParsing="false" onAction="#btnMPVA" prefHeight="26.0"
+            prefWidth="98.0" text="MPV"/>
+    <CheckBox fx:id="cbHs" layoutX="41.0" layoutY="37.0" mnemonicParsing="false" text="Hold script"/>
+    <Button layoutX="349.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnMediaInfoA" prefHeight="26.0"
+            prefWidth="98.0" text="Media Info"/>
+    <Label layoutX="19.0" layoutY="497.0" text="apt-get install mediainfo-gui"/>
+    <Label layoutX="477.0" layoutY="386.0" text="sudo apt-get install timeshift"/>
+    <Button layoutX="750.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnTimeshift" prefHeight="26.0"
+            prefWidth="98.0" text="Timeshift"/>
+    <Label layoutX="477.0" layoutY="128.0" text="sudo apt-get install albert (Ubuntu 16.04)"/>
+    <Button layoutX="750.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnAlbert" prefHeight="26.0"
+            prefWidth="98.0" text="Albert "/>
+    <Label layoutX="477.0" layoutY="183.0" text="sudo apt install trash-cli"/>
+    <Label layoutX="477.0" layoutY="236.0" text="sudo trash-empty"/>
+    <Button layoutX="750.0" layoutY="178.0" mnemonicParsing="false" onAction="#btnTrashCliInstall" prefHeight="26.0"
+            prefWidth="98.0" text="Trash-cli"/>
+    <Button layoutX="750.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnTrashEmpty" prefHeight="26.0"
+            prefWidth="98.0" text="TrashEmpty"/>
+    <Label layoutX="477.0" layoutY="287.0" text="sudo apt install smplayer (Ubuntu 16.04)"/>
+    <Button layoutX="750.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnSMPlayer" prefHeight="26.0"
+            prefWidth="98.0" text="SMPlayer"/>
+    <Label layoutX="477.0" layoutY="337.0" text="sudo apt install smplayer (Ubuntu 17.10)"/>
+    <Button layoutX="750.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnSMPlayer2" prefHeight="26.0"
+            prefWidth="98.0" text="SMPlayer"/>
+    <Label layoutX="477.0" layoutY="79.0" text="sudo apt-get install albert (Ubuntu 17.10)"/>
+    <Button layoutX="750.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnAlbert2" prefHeight="26.0"
+            prefWidth="98.0" text="Albert "/>
+</AnchorPane>
