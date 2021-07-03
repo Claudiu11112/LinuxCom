@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.Pane?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0"
-      prefWidth="486.0" style="-fx-background-color: CADETBLUE;" xmlns="http://javafx.com/javafx/8.0.121"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-    <Button fx:id="btnOK" disable="true" layoutX="358.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnOKA"
-            prefHeight="26.0" prefWidth="80.0" text="OK"/>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="486.0" style="-fx-background-color: CADETBLUE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button fx:id="btnOK" disable="true" layoutX="358.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnOKA" prefHeight="26.0" prefWidth="80.0" text="OK" />
     <MenuBar prefHeight="29.0" prefWidth="486.0">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" onAction="#miCloseA" text="Close"/>
+            <MenuItem mnemonicParsing="false" onAction="#miCloseA" text="Close" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <CheckMenuItem fx:id="miEditPass" mnemonicParsing="false" onAction="#miEditPassA"
-                           text="Edit password"/>
-            <MenuItem mnemonicParsing="false" onAction="#miShowPassA" text="Show Password"/>
-            <CheckMenuItem fx:id="cbHold" mnemonicParsing="false" text="Hold script"/>
-            <MenuItem fx:id="miInstall" mnemonicParsing="false" onAction="#miInstallA" text="Install Apps"/>
+            <CheckMenuItem fx:id="miEditPass" mnemonicParsing="false" onAction="#miEditPassA" text="Edit password" />
+            <MenuItem mnemonicParsing="false" onAction="#miShowPassA" text="Show Password" />
+            <CheckMenuItem fx:id="cbHold" mnemonicParsing="false" text="Hold script" />
+            <MenuItem fx:id="miInstall" mnemonicParsing="false" onAction="#miInstallA" text="Install Apps" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" onAction="#miContentsA" text="Contents"/>
-            <MenuItem mnemonicParsing="false" onAction="#miAboutA" text="About"/>
+            <MenuItem mnemonicParsing="false" onAction="#miContentsA" text="Contents" />
+            <MenuItem mnemonicParsing="false" onAction="#miAboutA" text="About" />
         </Menu>
     </MenuBar>
-    <Label layoutX="30.0" layoutY="128.0" prefHeight="16.0" prefWidth="298.0"
-           text="echo pw | sudo -S apt-get -y upgrade"/>
-    <Label layoutX="30.0" layoutY="174.0" text="echo pw | sudo -S apt-get -y update"/>
-    <Label layoutX="30.0" layoutY="223.0" text="echo pw | sudo -S apt-get -y dist-upgrade -f"/>
-    <Label layoutX="30.0" layoutY="275.0" text="echo pw | sudo -S apt-get -y autoremove"/>
-    <Label layoutX="30.0" layoutY="328.0" text="echo pw | sudo -S apt-get -y autoclean"/>
-    <Button layoutX="335.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnUpdateA"
-            prefHeight="26.0" prefWidth="103.0" text="Update"/>
-    <Button layoutX="335.0" layoutY="218.0" mnemonicParsing="false" onAction="#btnDistUpgA"
-            text="Dist Upgrade"/>
-    <Button layoutX="335.0" layoutY="270.0" mnemonicParsing="false" onAction="#btnAutoremoveA"
-            prefHeight="26.0" prefWidth="103.0" text="Autoremove"/>
-    <Button layoutX="335.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnCleanA"
-            prefHeight="26.0" prefWidth="103.0" text="Clean"/>
-    <Label layoutX="33.0" layoutY="63.0" text="Set password: "/>
-    <TextField fx:id="tfPass" disable="true" layoutX="138.0" layoutY="58.0" prefHeight="26.0" prefWidth="207.0"/>
-    <Button layoutX="335.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnUpgradeA"
-            prefHeight="26.0" prefWidth="103.0" text="Upgrade"/>
-    <Button layoutX="335.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnAllComA" prefHeight="26.0"
-            prefWidth="103.0" text="All com"/>
-    <Label layoutX="30.0" layoutY="379.0" prefHeight="16.0" prefWidth="266.0" text="All commands"/>
+    <Label layoutX="30.0" layoutY="128.0" prefHeight="16.0" prefWidth="298.0" text="echo pw | sudo -S apt-get -y upgrade" />
+    <Label layoutX="30.0" layoutY="174.0" text="echo pw | sudo -S apt-get -y update" />
+    <Label layoutX="30.0" layoutY="223.0" text="echo pw | sudo -S apt-get -y dist-upgrade -f" />
+    <Label layoutX="30.0" layoutY="275.0" text="echo pw | sudo -S apt-get -y autoremove" />
+    <Label layoutX="30.0" layoutY="328.0" text="echo pw | sudo -S apt-get -y autoclean" />
+    <Button layoutX="335.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnUpdateA" prefHeight="29.0" prefWidth="103.0" text="Update" />
+    <Button layoutX="335.0" layoutY="218.0" mnemonicParsing="false" onAction="#btnDistUpgA" prefHeight="29.0" prefWidth="103.0" text="Dist Upgrade" />
+    <Button layoutX="335.0" layoutY="270.0" mnemonicParsing="false" onAction="#btnAutoremoveA" prefHeight="29.0" prefWidth="103.0" text="Autoremove" />
+    <Button layoutX="335.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnCleanA" prefHeight="29.0" prefWidth="103.0" text="Clean" />
+    <Label layoutX="33.0" layoutY="63.0" text="Set password: " />
+    <TextField fx:id="tfPass" disable="true" layoutX="138.0" layoutY="58.0" prefHeight="26.0" prefWidth="207.0" />
+    <Button layoutX="335.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnUpgradeA" prefHeight="29.0" prefWidth="103.0" text="Upgrade" />
+    <Button layoutX="335.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnAllComA" prefHeight="29.0" prefWidth="103.0" text="All com" />
+    <Label layoutX="30.0" layoutY="379.0" prefHeight="16.0" prefWidth="266.0" text="All commands" />
 </Pane>

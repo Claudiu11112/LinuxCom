@@ -11,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.prefs.Preferences;
 
 public class Controller {
@@ -152,10 +153,10 @@ public class Controller {
 
     public void miInstallA(ActionEvent ae) throws IOException {
         if (ae.getSource() == miInstall) {
-            Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("app.fxml")));
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.getIcons().add(new Image(Main.class.getResourceAsStream("icon.png")));
+            stage.getIcons().add(new Image(Objects.requireNonNull(Main.class.getResourceAsStream("icon.png"))));
             stage.setResizable(false);
             stage.show();
         }
